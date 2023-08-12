@@ -1,0 +1,7 @@
+2023-08-06 13:41:35 TC_LoginTest_001 [INFO] URL is opened
+2023-08-06 13:41:52 TC_LoginTest_001 [INFO] URL is opened
+2023-08-06 13:41:53 TC_LoginTest_001 [INFO] Username is entered
+2023-08-06 13:41:53 TC_LoginTest_001 [INFO] Passworkd is entered
+2023-08-06 13:41:54 TC_LoginTest_001 [INFO] Clicked on submit
+2023-08-06 13:41:54 TC_LoginTest_001 [INFO] Title of the opened page after submit is: Guru99 Bank Manager HomePage
+2023-08-06 13:41:54 TC_LoginTest_001 [INFO] Login test passed
