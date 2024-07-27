@@ -6,9 +6,8 @@ import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -66,12 +65,12 @@ public class BaseClass {
 	}
 
 	public String randomstring() {
-		String generatedstring = RandomStringUtils.randomAlphabetic(8);
-		return generatedstring;
+		String generatedString = RandomStringUtils.randomAlphabetic(8);
+		return generatedString;
 	}
 
 	public String randomNum() {
-		String generatedstring2 = RandomStringUtils.randomNumeric(8);
-		return generatedstring2;
+		String generatedNumber = RandomStringUtils.randomNumeric(8);
+		return generatedNumber;
 	}
 }
