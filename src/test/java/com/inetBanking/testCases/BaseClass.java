@@ -6,6 +6,7 @@ import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
@@ -35,20 +36,13 @@ public class BaseClass {
 	public void setUp(String br) {
 
 		// Log4j configuation code lines
-		logger = Logger.getLogger(getClass());
-		PropertyConfigurator.configure("Log4j.properties");
+		logger = LogManager.getLogger(getClass());
 
 		if (br.equals("chrome")) {
-			//ChromeOptions co = new ChromeOptions();
-			//co.setBrowserVersion("116");
-			//co.setBinary("C:\\Users\\shah4\\.cache\\selenium\\chrome\\chrome-win64\\chrome.exe");
-			System.setProperty("webdriver.chrome.driver", readConfig.getChromePath());
 			driver = new ChromeDriver();
 		} else if (br.equals("edge")) {
-			//System.setProperty("webdriver.edge.driver", readconfig.getEdgePath());
 			driver = new EdgeDriver();
 		} else if (br.equals("firefox")) {
-			//System.setProperty("webdriver.gecko.driver", readconfig.getFirefoxPath());
 			driver = new FirefoxDriver();
 		}
 
