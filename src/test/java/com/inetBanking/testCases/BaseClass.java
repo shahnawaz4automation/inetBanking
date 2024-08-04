@@ -74,9 +74,4 @@ public class BaseClass {
 		String generatedNumber = RandomStringUtils.randomNumeric(8);
 		return generatedNumber;
 	}
-	
-	@Test
-	public void test() {
-		System.out.println("Running the test");
-	}
 }
