@@ -17,11 +17,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.inetbanking2.utilities.ReadConfig;
 
 public class BaseClass {
-
+	//constructor will be invoked and the config.properties file will be loaded
 	ReadConfig readConfig = new ReadConfig();
 
 	public String baseURL = readConfig.getApplicatoinURL();
@@ -72,5 +73,10 @@ public class BaseClass {
 	public String randomNum() {
 		String generatedNumber = RandomStringUtils.randomNumeric(8);
 		return generatedNumber;
+	}
+	
+	@Test
+	public void test() {
+		System.out.println("Running the test");
 	}
 }

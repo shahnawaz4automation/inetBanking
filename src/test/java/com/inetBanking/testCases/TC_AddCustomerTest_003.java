@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 import com.inetBanking.pageObjects.AddCustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
 
@@ -29,9 +30,9 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		addcust.clickAddNewCustomer();
 		
 		driver.switchTo().frame("google_ads_iframe_/24132379/INTERSTITIAL_DemoGuru99_0");
-		boolean ad = driver.getPageSource().contains("3rd party ad content");  
+		boolean ad1= driver.getPageSource().contains("3rd party ad content");  
 		
-		if(ad=true) {
+		if(ad1=true) {
 			driver.findElement(By.xpath("//div[@id='dismiss-button']")).click();
 		}
 		driver.switchTo().defaultContent();
