@@ -19,13 +19,15 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class Reporting extends TestListenerAdapter {
-	static WebDriver driver;
-	ExtentReports extent = new ExtentReports();
+	public static ExtentSparkReporter sparkReporter;
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static WebDriver driver;
+	
+	/*ExtentReports extent = new ExtentReports();
 	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 	String repName = "./\\Extent Reports\\" + "ExtentReport-Spark" + timeStamp + ".html";
-	ExtentSparkReporter spark = new ExtentSparkReporter(repName); // repName = specify location
-
-	public static ExtentTest test;
+	ExtentSparkReporter spark = new ExtentSparkReporter(repName); // repName = specify location */
 
 	public void onStart(ITestContext testContext) {
 		test = extent.createTest("InetBankingV2 Test Project").// Tile of report
@@ -72,14 +74,14 @@ public class Reporting extends TestListenerAdapter {
 		extent.flush();
 	}
 
-	public static String capturescreenshot(String fileName) throws IOException {
+	/*public static String capturescreenshot(String fileName) throws IOException {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File srcfile = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		File destinationfilepath = new File(System.getProperty("user.dir") + "\\Screenshots\\" + fileName + ".png");
 		String absolutepathlocation = destinationfilepath.getAbsolutePath();
 		FileUtils.copyFile(srcfile, destinationfilepath);
 		return absolutepathlocation;
-	}
+	}*/
 
 	public static String capturescreenshot() {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
