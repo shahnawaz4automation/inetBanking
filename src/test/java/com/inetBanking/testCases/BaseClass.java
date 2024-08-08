@@ -2,7 +2,10 @@ package com.inetBanking.testCases;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -55,7 +58,9 @@ public class BaseClass {
 	}
 
 	public void initializeReport() {
-		sparkReporter = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/extentSparkReport.html");
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+		String repName = "./\\Extent Reports\\" + "ExtentReport-Spark" + timeStamp + ".html";
+		sparkReporter = new ExtentSparkReporter(repName); // repName = specify location
 		sparkReporter.config().setDocumentTitle("AutomationReport");
 		sparkReporter.config().setReportName("Automation Test Execution Report");
 		sparkReporter.config().setTheme(Theme.STANDARD);
@@ -68,7 +73,7 @@ public class BaseClass {
 
 	public static String captureScreenshot(WebDriver driver) throws IOException {
 		String FileSeparator = System.getProperty("file.separator"); // On Windows, it returns a backslash (\).
-		String Extent_report_path = "." + FileSeparator + "Reports";
+		String Extent_report_path = "." + FileSeparator + "Extent Reports";
 		String ScreenshotPath = Extent_report_path + FileSeparator + "screenshots";
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String screenshotName = "screenshot" + Math.random() + ".png";
