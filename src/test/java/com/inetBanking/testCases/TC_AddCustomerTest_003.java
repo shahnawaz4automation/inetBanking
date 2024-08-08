@@ -62,7 +62,6 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 			Assert.assertTrue(true);
 			logger.info("Test case passed....");
 		} else {
-			captureScreen(driver, "addNewCustomer"); //calling captureScreen() from baseclass
 			Assert.assertTrue(false);
 			logger.info("Test Case Failed....");
 		}
