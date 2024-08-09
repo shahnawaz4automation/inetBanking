@@ -38,7 +38,7 @@ public class TC_LoginTest_001 extends BaseClass {
 		System.out.println(title);
 		logger.info("Title of the opened page after submit is: " + title);
 
-		if (driver.getTitle().equalsIgnoreCase("Guru99 Bank1 Manager HomePage")) {
+		if (driver.getTitle().equalsIgnoreCase("Guru99 Bank Manager HomePage")) {
 			Assert.assertTrue(true);
 			logger.info("Login test passed");
 		} else {
