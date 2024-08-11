@@ -4,18 +4,29 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.inetBanking.pageObjects.AddCustomerPage;
 import com.inetBanking.pageObjects.LoginPage;
 
 public class TC_AddCustomerTest_003 extends BaseClass {
-
+	@BeforeTest
+	public void startReporter() {
+		initializeReport();
+	}
 	@Test
 	public void addNewCustomer() throws IOException, InterruptedException 
 	{
 		driver.get(baseURL);
 		logger.info("URL is opened");
+		
+		String methodName = new Exception().getStackTrace()[0].getMethodName();
+		test = extent.createTest(methodName, "Launch browser and website").assignAuthor("shahnawaz")
+				.assignCategory("Smoke Test").assignDevice("chrome");
+		logger.info("URL is opened");
+		test.log(Status.PASS, "user lauched website");
 		
 		LoginPage lp = new LoginPage(driver); // driver is coming from BaseClass
 		lp.setUserName(username);

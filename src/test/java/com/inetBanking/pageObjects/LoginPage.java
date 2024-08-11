@@ -5,15 +5,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//this class has constructor, elements and action methods
 public class LoginPage {
-
+	// 1st create WebDriver variable
 	WebDriver ldriver;
 
+	// 2nd create constructor (Purpose:	This constructor is part of the Page Object Model (POM) design pattern, 
+	//where each web page of the application under test is represented by a separate class. 
+	//The purpose of this constructor is to set up the WebDriver instance for the LoginPage and initialize its web elements so that they can be interacted with in tests.)
 	public LoginPage(WebDriver rdriver) {
 		ldriver = rdriver;
-		PageFactory.initElements(rdriver, this);
+		PageFactory.initElements(rdriver, this); //This line initializes the WebElements in the LoginPage class using Selenium's PageFactory.
+		// PageFactory.initElements() - is a method that initializes all the WebElements annotated with @FindBy, @FindBys, or @FindAll in the class.
+		//The rdriver argument is the WebDriver instance used to locate elements.
+		//The this keyword refers to the current instance of the LoginPage class.
 	}
-
+	
+	//Locating elements
 	@FindBy(name = "uid")
 	WebElement txtUserName;
 
