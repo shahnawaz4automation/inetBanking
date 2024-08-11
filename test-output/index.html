@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-InetBankingV2" class="navigator-link">
-              <span class="suite-name border-passed">InetBankingV2</span>
+              <span class="suite-name border-failed">InetBankingV2</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-InetBankingV2" class="hide-methods failed suite-InetBankingV2"> (hide)</a> <!-- hide-methods failed suite-InetBankingV2 -->
+                      <a href="#" panel-name="suite-InetBankingV2" class="show-methods failed suite-InetBankingV2"> (show)</a> <!-- show-methods failed suite-InetBankingV2 -->
+                    </span>
+                    <div class="method-list-content failed suite-InetBankingV2">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="LoginDDT(mngr519976, AsasYjA)">LoginDDT(mngr519976, AsasYjA)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="LoginDDT(oisajfdsld, muvEmEg)">LoginDDT(oisajfdsld, muvEmEg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="LoginDDT(mngr519978, muvEmEg)">LoginDDT(mngr519978, muvEmEg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-InetBankingV2 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +127,12 @@
                     <div class="method-list-content passed suite-InetBankingV2">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginTest_001" class="method navigator-link" hash-for-method="loginTest">loginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="LoginDDT(mngr582629, AsasYjA)">LoginDDT(mngr582629, AsasYjA)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-InetBankingV2" title="com.inetBanking.testCases.TC_LoginDDT_002" class="method navigator-link" hash-for-method="LoginDDT(mngr582629, AsasYjA)">LoginDDT(mngr582629, AsasYjA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-InetBankingV2 -->
@@ -118,17 +147,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-InetBankingV2" class="panel InetBankingV2">
-          <div class="suite-InetBankingV2-class-passed">
+          <div class="suite-InetBankingV2-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.inetBanking.testCases.TC_LoginTest_001</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.inetBanking.testCases.TC_LoginDDT_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest">
-                  </a> <!-- loginTest -->
-                  <span class="method-name">loginTest</span>
+                  <a name="LoginDDT(mngr519976, AsasYjA)">
+                  </a> <!-- LoginDDT(mngr519976, AsasYjA) -->
+                  <span class="method-name">LoginDDT</span>
+                  <span class="parameters">(mngr519976,AsasYjA)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetBanking.testCases.TC_LoginDDT_002.LoginDDT(TC_LoginDDT_002.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDDT(oisajfdsld, muvEmEg)">
+                  </a> <!-- LoginDDT(oisajfdsld, muvEmEg) -->
+                  <span class="method-name">LoginDDT</span>
+                  <span class="parameters">(oisajfdsld,muvEmEg)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetBanking.testCases.TC_LoginDDT_002.LoginDDT(TC_LoginDDT_002.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDDT(mngr519978, muvEmEg)">
+                  </a> <!-- LoginDDT(mngr519978, muvEmEg) -->
+                  <span class="method-name">LoginDDT</span>
+                  <span class="parameters">(mngr519978,muvEmEg)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.inetBanking.testCases.TC_LoginDDT_002.LoginDDT(TC_LoginDDT_002.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-InetBankingV2-class-failed -->
+          <div class="suite-InetBankingV2-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.inetBanking.testCases.TC_LoginDDT_002</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDDT(mngr582629, AsasYjA)">
+                  </a> <!-- LoginDDT(mngr582629, AsasYjA) -->
+                  <span class="method-name">LoginDDT</span>
+                  <span class="parameters">(mngr582629,AsasYjA)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginDDT(mngr582629, AsasYjA)">
+                  </a> <!-- LoginDDT(mngr582629, AsasYjA) -->
+                  <span class="method-name">LoginDDT</span>
+                  <span class="parameters">(mngr582629,AsasYjA)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +234,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Banking App Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.inetBanking.testCases.TC_LoginTest_001&quot;/&gt;
+      &lt;class name=&quot;com.inetBanking.testCases.TC_LoginDDT_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Banking App Test --&gt;
 &lt;/suite&gt; &lt;!-- InetBankingV2 --&gt;
@@ -189,16 +274,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'com.inetBanking.testCases.TC_LoginTest_001')
-data.setCell(0, 3, 8304);
+data.setCell(0, 1, 'LoginDDT')
+data.setCell(0, 2, 'com.inetBanking.testCases.TC_LoginDDT_002')
+data.setCell(0, 3, 8861);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginDDT')
+data.setCell(1, 2, 'com.inetBanking.testCases.TC_LoginDDT_002')
+data.setCell(1, 3, 5995);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LoginDDT')
+data.setCell(2, 2, 'com.inetBanking.testCases.TC_LoginDDT_002')
+data.setCell(2, 3, 4383);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginDDT')
+data.setCell(3, 2, 'com.inetBanking.testCases.TC_LoginDDT_002')
+data.setCell(3, 3, 3525);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginDDT')
+data.setCell(4, 2, 'com.inetBanking.testCases.TC_LoginDDT_002')
+data.setCell(4, 3, 3476);
 window.suiteTableData['InetBankingV2']= { tableData: data, tableDiv: 'times-div-InetBankingV2'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-InetBankingV2">
               </div> <!-- times-div-InetBankingV2 -->
             </div> <!-- times-div -->
@@ -224,22 +325,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.inetBanking.testCases.TC_LoginTest_001</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.inetBanking.testCases.TC_LoginDDT_002</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startReporter</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">412 ms</span>
+                <span class="method-start">200 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginTest</span>
-                <span class="method-start">3468 ms</span>
+                <span class="method-name">LoginDDT(mngr582629, AsasYjA)</span>
+                <span class="method-start">2706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginDDT(mngr519976, AsasYjA)</span>
+                <span class="method-start">11572 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginDDT(mngr582629, AsasYjA)</span>
+                <span class="method-start">15260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginDDT(mngr519978, muvEmEg)</span>
+                <span class="method-start">21258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginDDT(oisajfdsld, muvEmEg)</span>
+                <span class="method-start">24876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11777 ms</span>
+                <span class="method-start">29496 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

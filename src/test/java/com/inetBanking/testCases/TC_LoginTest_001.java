@@ -19,6 +19,7 @@ public class TC_LoginTest_001 extends BaseClass {
 	@Test
 	public void loginTest() throws IOException {
 		driver.get(baseURL);
+		
 		String methodName = new Exception().getStackTrace()[0].getMethodName();
 		test = extent.createTest(methodName, "Launch browser and website").assignAuthor("shahnawaz")
 				.assignCategory("Smoke Test").assignDevice("chrome");

@@ -4,18 +4,30 @@ import java.io.IOException;
 
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.Status;
 import com.inetBanking.pageObjects.LoginPage;
 import com.inetbanking2.utilities.XLUtils;
 
 
 public class TC_LoginDDT_002 extends BaseClass{
-	
+	@BeforeTest
+	public void startReporter() {
+		initializeReport();
+	}
 	@Test(dataProvider =  "LoginData")  // data provider name we need to specify here
 	public void LoginDDT(String user, String pwd) { //LoginDDT will take 2 parameters so we need to specify - user,pwd
 		driver.get(baseURL);
 		logger.info("URL is opened");
+		
+		String methodName = new Exception().getStackTrace()[0].getMethodName();
+		test = extent.createTest(methodName, "Launch browser and website").assignAuthor("shahnawaz")
+				.assignCategory("Smoke Test").assignDevice("chrome");
+		logger.info("URL is opened");
+		test.log(Status.PASS, "user lauched website");
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.setUserName(user);

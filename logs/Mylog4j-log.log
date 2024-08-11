@@ -1,6 +1,39 @@
-[INFO ] 2024-08-10 11:07:39.912 [main] TC_LoginTest_001:25 - URL is opened
-[INFO ] 2024-08-10 11:07:40.182 [main] TC_LoginTest_001:30 - Username is entered
-[INFO ] 2024-08-10 11:07:40.372 [main] TC_LoginTest_001:32 - Passworkd is entered
-[INFO ] 2024-08-10 11:07:42.909 [main] TC_LoginTest_001:35 - Clicked on submit
-[INFO ] 2024-08-10 11:07:42.928 [main] TC_LoginTest_001:39 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-08-10 11:07:42.951 [main] TC_LoginTest_001:43 - Login test passed
+[INFO ] 2024-08-11 08:18:37.902 [main] Utils:112 - [TestNG] Running:
+  C:\Users\shah4\eclipse-workspace\InetBankingV2\testng.xml
+
+[INFO ] 2024-08-11 08:18:43.575 [main] TC_LoginTest_001:26 - URL is opened
+[INFO ] 2024-08-11 08:18:43.739 [main] TC_LoginTest_001:31 - Username is entered
+[INFO ] 2024-08-11 08:18:43.855 [main] TC_LoginTest_001:33 - Passworkd is entered
+[INFO ] 2024-08-11 08:18:45.755 [main] TC_LoginTest_001:36 - Clicked on submit
+[INFO ] 2024-08-11 08:18:45.763 [main] TC_LoginTest_001:40 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-08-11 08:18:45.776 [main] TC_LoginTest_001:44 - Login test passed
+[INFO ] 2024-08-11 08:18:52.220 [main] TC_LoginDDT_002:24 - URL is opened
+[INFO ] 2024-08-11 08:18:52.223 [main] TC_LoginDDT_002:29 - URL is opened
+[INFO ] 2024-08-11 08:18:52.365 [main] TC_LoginDDT_002:34 - Username is entered
+[INFO ] 2024-08-11 08:18:52.478 [main] TC_LoginDDT_002:36 - Passworkd is entered
+[INFO ] 2024-08-11 08:18:55.114 [main] TC_LoginDDT_002:39 - Clicked on submit
+[INFO ] 2024-08-11 08:18:55.127 [main] TC_LoginDDT_002:48 - Login passed
+[INFO ] 2024-08-11 08:18:58.559 [main] TC_LoginDDT_002:24 - URL is opened
+[INFO ] 2024-08-11 08:18:58.560 [main] TC_LoginDDT_002:29 - URL is opened
+[INFO ] 2024-08-11 08:18:58.819 [main] TC_LoginDDT_002:34 - Username is entered
+[INFO ] 2024-08-11 08:18:58.927 [main] TC_LoginDDT_002:36 - Passworkd is entered
+[INFO ] 2024-08-11 08:18:59.397 [main] TC_LoginDDT_002:39 - Clicked on submit
+[INFO ] 2024-08-11 08:24:14.537 [main] TC_LoginDDT_002:24 - URL is opened
+[INFO ] 2024-08-11 08:24:14.539 [main] TC_LoginDDT_002:29 - URL is opened
+[INFO ] 2024-08-11 08:24:14.763 [main] TC_LoginDDT_002:34 - Username is entered
+[INFO ] 2024-08-11 08:24:14.894 [main] TC_LoginDDT_002:36 - Passworkd is entered
+[INFO ] 2024-08-11 08:24:17.846 [main] TC_LoginDDT_002:39 - Clicked on submit
+[INFO ] 2024-08-11 08:24:17.853 [main] TC_LoginDDT_002:48 - Login passed
+[INFO ] 2024-08-11 08:24:21.777 [main] TC_LoginDDT_002:24 - URL is opened
+[INFO ] 2024-08-11 08:24:21.777 [main] TC_LoginDDT_002:29 - URL is opened
+[INFO ] 2024-08-11 08:24:22.016 [main] TC_LoginDDT_002:34 - Username is entered
+[INFO ] 2024-08-11 08:24:22.131 [main] TC_LoginDDT_002:36 - Passworkd is entered
+[INFO ] 2024-08-11 08:24:22.549 [main] TC_LoginDDT_002:39 - Clicked on submit
+[INFO ] 2024-08-11 08:24:26.430 [main] TC_LoginDDT_002:24 - URL is opened
+[INFO ] 2024-08-11 08:24:26.430 [main] TC_LoginDDT_002:29 - URL is opened
+[INFO ] 2024-08-11 08:24:26.543 [main] TC_LoginDDT_002:34 - Username is entered
+[INFO ] 2024-08-11 08:24:26.735 [main] TC_LoginDDT_002:36 - Passworkd is entered
+[INFO ] 2024-08-11 08:24:27.128 [main] TC_LoginDDT_002:39 - Clicked on submit
+[INFO ] 2024-08-11 08:24:34.521 [main] TC_AddCustomerTest_003:18 - URL is opened
+[INFO ] 2024-08-11 08:24:34.679 [main] TC_AddCustomerTest_003:22 - User name is provided
+[INFO ] 2024-08-11 08:24:34.818 [main] TC_AddCustomerTest_003:24 - Password is provided
