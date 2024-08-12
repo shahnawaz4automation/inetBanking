@@ -1,0 +1,9 @@
+[INFO ] 2024-08-12 22:57:24.593 [main] Utils:112 - [TestNG] Running:
+  C:\Users\shah4\eclipse-workspace\InetBankingV2\testng.xml
+
+[INFO ] 2024-08-12 22:57:33.143 [main] TC_LoginTest_001:26 - URL is opened
+[INFO ] 2024-08-12 22:57:33.426 [main] TC_LoginTest_001:31 - Username is entered
+[INFO ] 2024-08-12 22:57:33.972 [main] TC_LoginTest_001:33 - Passworkd is entered
+[INFO ] 2024-08-12 22:57:36.809 [main] TC_LoginTest_001:36 - Clicked on submit
+[INFO ] 2024-08-12 22:57:36.831 [main] TC_LoginTest_001:40 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-08-12 22:57:36.860 [main] TC_LoginTest_001:44 - Login test passed

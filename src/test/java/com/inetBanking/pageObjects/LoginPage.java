@@ -19,6 +19,8 @@ public class LoginPage {
 		// PageFactory.initElements() - is a method that initializes all the WebElements annotated with @FindBy, @FindBys, or @FindAll in the class.
 		//The rdriver argument is the WebDriver instance used to locate elements.
 		//The this keyword refers to the current instance of the LoginPage class.
+		//2. When you call PageFactory.initElements(rdriver, this);,you're telling Selenium's PageFactory to initialize all the elements (like buttons, text fields, etc.) in the current LoginPage object.
+		//3. How is it used?: By passing this, you're essentially saying, "initialize the web elements in this particular instance of the LoginPage class." The PageFactory uses the WebDriver (rdriver) to locate the elements on the web page and then links them to the corresponding fields in the LoginPage class.
 	}
 	
 	//Locating elements
