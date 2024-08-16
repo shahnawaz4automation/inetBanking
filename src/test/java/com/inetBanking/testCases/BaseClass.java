@@ -33,7 +33,8 @@ public class BaseClass {
 	public String username = readConfig.getUsername();
 	public String password = readConfig.getPassword();
 	public static WebDriver driver; // initialized
-	public static Logger logger;
+	// Log4j configuation code lines
+	public static Logger logger = LogManager.getLogger();	
 
 	public static ExtentSparkReporter sparkReporter;
 	public static ExtentReports extent;
@@ -42,9 +43,7 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeClass
 	public void setUp(String br) {
-		// Log4j configuation code lines
-		logger = LogManager.getLogger(getClass());
-
+		
 		if (br.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (br.equals("edge")) {
