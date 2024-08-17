@@ -1,36 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-17T06:20:26 IST" name="InetBankingV2" finished-at="2024-08-17T06:20:34 IST" duration-ms="8441">
+  <suite started-at="2024-08-17T19:02:46 IST" name="Default suite" finished-at="2024-08-17T19:02:47 IST" duration-ms="978">
     <groups>
     </groups>
-    <test started-at="2024-08-17T06:20:26 IST" name="Banking App Test" finished-at="2024-08-17T06:20:34 IST" duration-ms="8441">
+    <test started-at="2024-08-17T19:02:46 IST" name="Default test" finished-at="2024-08-17T19:02:47 IST" duration-ms="978">
       <class name="com.inetBanking.testCases.TC_LoginTest_001">
-        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@56aaaecd]" started-at="2024-08-17T06:20:26 IST" name="startReporter" finished-at="2024-08-17T06:20:26 IST" duration-ms="263" status="PASS">
+        <test-method is-config="true" signature="startReporter()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4e858e0a]" started-at="2024-08-17T19:02:46 IST" name="startReporter" finished-at="2024-08-17T19:02:47 IST" duration-ms="820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReporter -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@56aaaecd]" started-at="2024-08-17T06:20:26 IST" name="setUp" finished-at="2024-08-17T06:20:28 IST" duration-ms="1697" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4e858e0a]" started-at="2024-08-17T19:02:47 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1723901567733" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\shah4\AppData\Local\Temp\testng-eclipse-710849794\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\shah4\AppData\Local\Temp\testng-eclipse-710849794\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@56aaaecd]" started-at="2024-08-17T06:20:28 IST" name="loginTest" finished-at="2024-08-17T06:20:33 IST" duration-ms="5828" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4e858e0a]" started-at="2024-08-17T19:02:47 IST" name="loginTest" finished-at="2024-08-17T19:02:47 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\shah4\AppData\Local\Temp\testng-eclipse-710849794\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in C:\Users\shah4\AppData\Local\Temp\testng-eclipse-710849794\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@56aaaecd]" started-at="2024-08-17T06:20:33 IST" name="tearDown" finished-at="2024-08-17T06:20:34 IST" duration-ms="609" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.inetBanking.testCases.TC_LoginTest_001@4e858e0a]" started-at="2024-08-17T19:02:47 IST" name="tearDown" finished-at="2024-08-17T19:02:47 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
-    </test> <!-- Banking App Test -->
-  </suite> <!-- InetBankingV2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

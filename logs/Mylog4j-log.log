@@ -1,6 +1,0 @@
-[INFO ] 2024-08-17 12:06:48.759 [main] BaseClass:26 - URL is opened
-[INFO ] 2024-08-17 12:06:49.172 [main] BaseClass:31 - Username is entered
-[INFO ] 2024-08-17 12:06:49.429 [main] BaseClass:33 - Passworkd is entered
-[INFO ] 2024-08-17 12:06:51.648 [main] BaseClass:36 - Clicked on submit
-[INFO ] 2024-08-17 12:06:51.666 [main] BaseClass:40 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-08-17 12:06:51.689 [main] BaseClass:44 - Login test passed
