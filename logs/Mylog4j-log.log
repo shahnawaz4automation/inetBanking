@@ -1,12 +1,15 @@
-[INFO ] 2024-08-23 20:41:37.872 [main] BaseClass:26 - URL is opened
-[INFO ] 2024-08-23 20:41:38.203 [main] BaseClass:31 - Username is entered
-[INFO ] 2024-08-23 20:41:38.412 [main] BaseClass:33 - Passworkd is entered
-[INFO ] 2024-08-23 20:41:40.621 [main] BaseClass:36 - Clicked on submit
-[INFO ] 2024-08-23 20:41:40.644 [main] BaseClass:40 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-08-23 20:41:40.668 [main] BaseClass:44 - Login test passed
-[INFO ] 2024-08-23 20:41:42.437 [main] BaseClass:26 - URL is opened
-[INFO ] 2024-08-23 20:41:42.872 [main] BaseClass:31 - Username is entered
-[INFO ] 2024-08-23 20:41:43.060 [main] BaseClass:33 - Passworkd is entered
-[INFO ] 2024-08-23 20:41:44.806 [main] BaseClass:36 - Clicked on submit
-[INFO ] 2024-08-23 20:41:44.824 [main] BaseClass:40 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-08-23 20:41:44.840 [main] BaseClass:44 - Login test passed
+[INFO ] 2024-08-24 20:48:09.316 [main] Utils:112 - [TestNG] Running:
+  C:\Users\shah4\eclipse-workspace\InetBankingV2\testng.xml
+
+[INFO ] 2024-08-24 20:48:16.669 [main] BaseClass:27 - URL is opened
+[INFO ] 2024-08-24 20:48:16.916 [main] BaseClass:32 - Username is entered
+[INFO ] 2024-08-24 20:48:17.068 [main] BaseClass:34 - Passworkd is entered
+[INFO ] 2024-08-24 20:48:19.138 [main] BaseClass:37 - Clicked on submit
+[INFO ] 2024-08-24 20:48:19.152 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-08-24 20:48:19.169 [main] BaseClass:45 - Login test passed
+[INFO ] 2024-08-24 20:48:20.979 [main] BaseClass:27 - URL is opened
+[INFO ] 2024-08-24 20:48:21.119 [main] BaseClass:32 - Username is entered
+[INFO ] 2024-08-24 20:48:21.333 [main] BaseClass:34 - Passworkd is entered
+[INFO ] 2024-08-24 20:48:22.946 [main] BaseClass:37 - Clicked on submit
+[INFO ] 2024-08-24 20:48:22.962 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-08-24 20:48:22.978 [main] BaseClass:45 - Login test passed

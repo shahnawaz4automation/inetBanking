@@ -2,8 +2,7 @@ package com.inetBanking.testCases;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -36,7 +35,7 @@ public class BaseClass {
 	public String baseURL = readConfig.getApplicatoinURL();
 	public String username = readConfig.getUsername();
 	public String password = readConfig.getPassword();
-	private static WebDriver driver; // initialized
+	public static WebDriver driver; // initialized
 	
 	public static Logger logger;
 
@@ -44,10 +43,9 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 
-	@SuppressWarnings("deprecation")
 	@Parameters({"os","browser"})
 	@BeforeClass
-	public void setUp(String os, String br) throws MalformedURLException {
+	public void setUp(String os, String br) throws Exception {
 		// Log4j configuation code lines
 		logger = LogManager.getLogger();
 		
@@ -63,7 +61,7 @@ public class BaseClass {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			//capabilities.setPlatform(Platform.WIN11);
 			//OS
-			if(os.equalsIgnoreCase("windows")) {
+			if(os.equalsIgnoreCase("Windows")) {
 				capabilities.setPlatform(Platform.WIN11);
 			}else if(os.equalsIgnoreCase("mac")) {
 				capabilities.setPlatform(Platform.MAC);
@@ -79,7 +77,7 @@ public class BaseClass {
 			default: System.out.println("No Matching Browser");return;
 			}
 			
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wb/hub"),capabilities);
+			driver = new RemoteWebDriver(new URI("http://localhost:4444/wd/hub").toURL(),capabilities);
 		}
 			
 		driver.manage().window().maximize();

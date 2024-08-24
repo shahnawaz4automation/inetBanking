@@ -5,13 +5,13 @@
 		<listener class-name="com.inetbanking2.utilities.CustomListener"></listener>
 	</listeners>
 	<test thread-count="5" name="Banking App Test">
-		<parameter name="os" value="windows"></parameter>
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="os" value="Windows"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		<classes>
 			<class name="com.inetBanking.testCases.TC_LoginTest_001">
-				<methods>
+				<!-- methods>
 					<include name="loginTest"></include>
-				</methods>
+				</methods -->
 			</class>
 			<!--class name="com.inetBanking.testCases.TC_LoginDDT_002"/ -->
 			<!--class name="com.inetBanking.testCases.TC_AddCustomerTest_003" /-->
