@@ -5,6 +5,7 @@
 		<listener class-name="com.inetbanking2.utilities.CustomListener"></listener>
 	</listeners>
 	<test thread-count="5" name="Banking App Test">
+		<parameter name="os" value="windows"></parameter>
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.inetBanking.testCases.TC_LoginTest_001">

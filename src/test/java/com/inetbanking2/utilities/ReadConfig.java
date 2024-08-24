@@ -41,6 +41,11 @@ public class ReadConfig {
 		String name = pro.getProperty("name");
 		return name;
 	}
+	
+	public String getexecution_env() {
+		String env = pro.getProperty("execution_env");
+		return env;
+	}
 }
 
 
