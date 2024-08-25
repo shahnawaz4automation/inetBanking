@@ -36,50 +36,69 @@ public class BaseClass {
 	public String username = readConfig.getUsername();
 	public String password = readConfig.getPassword();
 	public static WebDriver driver; // initialized
-	
+
 	public static Logger logger;
 
 	public static ExtentSparkReporter sparkReporter;
 	public static ExtentReports extent;
 	public static ExtentTest test;
 
-	@Parameters({"os","browser"})
+	@Parameters({ "os", "browser" })
 	@BeforeClass
 	public void setUp(String os, String br) throws Exception {
 		// Log4j configuation code lines
 		logger = LogManager.getLogger();
-		
-		//code: whether to run in local or in selenium grid
-		if(readConfig.getexecution_env().equalsIgnoreCase("local")) {
+
+		// code: whether to run in local or in selenium grid
+		if (readConfig.getexecution_env().equalsIgnoreCase("local")) {
 			switch (br.toLowerCase()) {
-			case "chrome":driver = new ChromeDriver();break;
-			case "edge":driver = new EdgeDriver();break;
-			case "firefox":driver = new FirefoxDriver();break;
-			default:System.out.println("Invalid browser name...");return;
-			}	
-		}else if(readConfig.getexecution_env().equalsIgnoreCase("remote")) {
+			case "chrome":
+				driver = new ChromeDriver();
+				break;
+			case "edge":
+				driver = new EdgeDriver();
+				break;
+			case "firefox":
+				driver = new FirefoxDriver();
+				break;
+			default:
+				System.out.println("Invalid browser name...");
+				return;
+			}
+		} else if (readConfig.getexecution_env().equalsIgnoreCase("remote")) {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			//capabilities.setPlatform(Platform.WIN11);
-			//OS
-			if(os.equalsIgnoreCase("Windows")) {
+			// capabilities.setPlatform(Platform.WIN11);
+			// OS
+			if (os.equalsIgnoreCase("Windows")) {
 				capabilities.setPlatform(Platform.WIN11);
-			}else if(os.equalsIgnoreCase("mac")) {
+			} else if (os.equalsIgnoreCase("mac")) {
 				capabilities.setPlatform(Platform.MAC);
-			}else {
+			} else if (os.equalsIgnoreCase("linux")) {
+				capabilities.setPlatform(Platform.LINUX);
+			} else {
 				System.out.println("No matching OS");
 				return;
 			}
-			//capabilities.setBrowserName(br);
-			//browser
-			switch(br.toLowerCase()) {
-			case "chrome": capabilities.setBrowserName("chrome");break;
-			case "edge":capabilities.setBrowserName("MicrosoftEdge");break;
-			default: System.out.println("No Matching Browser");return;
+			// capabilities.setBrowserName(br);
+			// browser
+			switch (br.toLowerCase()) {
+			case "chrome":
+				capabilities.setBrowserName("chrome");
+				break;
+			case "edge":
+				capabilities.setBrowserName("MicrosoftEdge");
+				break;
+			case "firefox":
+				capabilities.setBrowserName("firefox");
+				break;
+			default:
+				System.out.println("No Matching Browser");
+				return;
 			}
-			
-			driver = new RemoteWebDriver(new URI("http://localhost:4444/wd/hub").toURL(),capabilities);
+
+			driver = new RemoteWebDriver(new URI("http://localhost:4444/wd/hub").toURL(), capabilities);
 		}
-			
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
@@ -94,8 +113,9 @@ public class BaseClass {
 		sparkReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
 		extent = new ExtentReports();
-		extent.attachReporter(sparkReporter); // using the extent reference we are attaching a report which is of type spark
-		
+		extent.attachReporter(sparkReporter); // using the extent reference we are attaching a report which is of type
+												// spark
+
 	}
 
 	public static String captureScreenshot(WebDriver driver) throws IOException {
@@ -113,7 +133,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
-		extent.flush();		
+		extent.flush();
 	}
 
 	public String randomstring() {

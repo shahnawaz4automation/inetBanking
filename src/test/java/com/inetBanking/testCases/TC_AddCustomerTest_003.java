@@ -17,14 +17,14 @@ public class TC_AddCustomerTest_003 extends BaseClass {
 		initializeReport();
 	}
 	@Test
-	public void addNewCustomer() throws IOException, InterruptedException 
+	public void addNewCustomer(String os, String browser) throws IOException, InterruptedException 
 	{
 		driver.get(baseURL);
 		logger.info("URL is opened");
 		
 		String methodName = new Exception().getStackTrace()[0].getMethodName();
 		test = extent.createTest(methodName, "Launch browser and website").assignAuthor("shahnawaz")
-				.assignCategory("Smoke Test").assignDevice("chrome");
+				.assignCategory("Smoke Test").assignDevice(browser);
 		logger.info("URL is opened");
 		test.log(Status.PASS, "user lauched website");
 		

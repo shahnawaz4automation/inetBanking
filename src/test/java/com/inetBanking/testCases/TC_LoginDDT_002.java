@@ -6,6 +6,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -18,14 +19,15 @@ public class TC_LoginDDT_002 extends BaseClass{
 	public void startReporter() {
 		initializeReport();
 	}
+	@Parameters({"os","browser"})
 	@Test(dataProvider =  "LoginData")  // data provider name we need to specify here
-	public void LoginDDT(String user, String pwd) { //LoginDDT will take 2 parameters so we need to specify - user,pwd
+	public void LoginDDT(String user, String pwd, String os, String browser) { //LoginDDT will take 2 parameters so we need to specify - user,pwd
 		driver.get(baseURL);
 		logger.info("URL is opened");
 		
 		String methodName = new Exception().getStackTrace()[0].getMethodName();
 		test = extent.createTest(methodName, "Launch browser and website").assignAuthor("shahnawaz")
-				.assignCategory("Smoke Test").assignDevice("chrome");
+				.assignCategory("Smoke Test").assignDevice(browser);
 		logger.info("URL is opened");
 		test.log(Status.PASS, "user lauched website");
 		

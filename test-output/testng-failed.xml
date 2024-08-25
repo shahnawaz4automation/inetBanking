@@ -4,18 +4,18 @@
   <listeners>
     <listener class-name="com.inetbanking2.utilities.CustomListener"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
-    <parameter name="os" value="Windows"/>
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" parallel="tests" name="Linux-chrome(failed)">
+    <parameter name="os" value="Linux"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.inetBanking.testCases.TC_LoginTest_001">
+      <class name="com.inetBanking.testCases.TC_LoginDDT_002">
         <methods>
           <include name="setUp"/>
-          <include name="loginTest"/>
           <include name="tearDown"/>
           <include name="startReporter"/>
+          <include name="LoginDDT"/>
         </methods>
-      </class> <!-- com.inetBanking.testCases.TC_LoginTest_001 -->
+      </class> <!-- com.inetBanking.testCases.TC_LoginDDT_002 -->
     </classes>
-  </test> <!-- Chrome Test(failed) -->
+  </test> <!-- Linux-chrome(failed) -->
 </suite> <!-- Failed suite [InetBankingV2] -->
