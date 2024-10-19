@@ -88,9 +88,7 @@
 		</dependency>
 	</dependencies>
 
-	<!-- Compiler and surefire Plugins required for executing tests using
-	testng.xml -->
-	<!-- Need to be added in between the properties and dependencies -->
+	<!-- Compiler and surefire Plugins required for executing tests using testng.xml -->
 	<build>
 		<plugins>
 			<plugin>
