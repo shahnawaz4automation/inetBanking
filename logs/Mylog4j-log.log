@@ -1,12 +1,12 @@
-[INFO ] 2024-11-02 00:07:51.134 [main] BaseClass:27 - URL is opened
-[INFO ] 2024-11-02 00:07:51.476 [main] BaseClass:32 - Username is entered
-[INFO ] 2024-11-02 00:07:51.689 [main] BaseClass:34 - Passworkd is entered
-[INFO ] 2024-11-02 00:07:52.702 [main] BaseClass:37 - Clicked on submit
-[INFO ] 2024-11-02 00:07:52.727 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-11-02 00:07:52.745 [main] BaseClass:45 - Login test passed
-[INFO ] 2024-11-02 00:07:53.492 [main] BaseClass:27 - URL is opened
-[INFO ] 2024-11-02 00:07:53.727 [main] BaseClass:32 - Username is entered
-[INFO ] 2024-11-02 00:07:53.931 [main] BaseClass:34 - Passworkd is entered
-[INFO ] 2024-11-02 00:07:54.336 [main] BaseClass:37 - Clicked on submit
-[INFO ] 2024-11-02 00:07:54.796 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
-[INFO ] 2024-11-02 00:07:54.812 [main] BaseClass:45 - Login test passed
+[INFO ] 2024-11-02 08:57:21.983 [main] BaseClass:27 - URL is opened
+[INFO ] 2024-11-02 08:57:22.240 [main] BaseClass:32 - Username is entered
+[INFO ] 2024-11-02 08:57:22.460 [main] BaseClass:34 - Passworkd is entered
+[INFO ] 2024-11-02 08:57:23.759 [main] BaseClass:37 - Clicked on submit
+[INFO ] 2024-11-02 08:57:23.814 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-11-02 08:57:23.857 [main] BaseClass:45 - Login test passed
+[INFO ] 2024-11-02 08:57:24.605 [main] BaseClass:27 - URL is opened
+[INFO ] 2024-11-02 08:57:24.771 [main] BaseClass:32 - Username is entered
+[INFO ] 2024-11-02 08:57:24.911 [main] BaseClass:34 - Passworkd is entered
+[INFO ] 2024-11-02 08:57:25.281 [main] BaseClass:37 - Clicked on submit
+[INFO ] 2024-11-02 08:57:25.630 [main] BaseClass:41 - Title of the opened page after submit is: Guru99 Bank Manager HomePage
+[INFO ] 2024-11-02 08:57:25.655 [main] BaseClass:45 - Login test passed
