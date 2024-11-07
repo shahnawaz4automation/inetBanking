@@ -13,7 +13,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<selenium-java>4.22.0</selenium-java>
+		<selenium-java>4.26.0</selenium-java>
 	</properties>
 
 	<dependencies>
